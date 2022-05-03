@@ -21,11 +21,17 @@ const getRewardsforThreeMonthsTotal = () => {
     return getRewardsforThreeMonths().reduce((acc,cur) => acc +cur.rewards,0);
 }
 
-addTransaction(154);
+/**addTransaction(154);
 addTransaction(54);
 addTransaction(200);
 addTransaction(20);
 addTransaction(300);
 
 console.log(getRewardsforThreeMonths());
-console.log(getRewardsforThreeMonthsTotal());
+console.log(getRewardsforThreeMonthsTotal()); */
+module.exports = {
+    list: list,
+    addTransaction: addTransaction,
+    getRewardsforThreeMonths: getRewardsforThreeMonths,
+    getRewardsforThreeMonthsTotal: getRewardsforThreeMonthsTotal
+};
